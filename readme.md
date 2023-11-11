@@ -1,7 +1,6 @@
 # UTEK
 Programming
 UTEK 2023 - Sustainable cities
-By: Rea Ahuja, Mai Shimozato, Lauren Kang & Jimin Woo
 
 This repository contains two C++ programs:
 
@@ -48,8 +47,6 @@ Suppose you have the following input string:
 e->fn, dx->abc, dx->e, abc->ca, dx->fn, ca->fn
 The program will output the adjacency matrix:
 
-plaintext
-Copy code
     a abc ca dx e fn
 ---------------------
 a | 0   0  0  0  0  0
@@ -83,12 +80,13 @@ g++ minimum_cost_path_finder.cpp -o minimum_cost_path_finder
 
 Minimum Cost Path Finder Example:
 Suppose you have the following input:
-Starting intersection: A
-Ending intersection: D
-a->b($5), b->c($3), c->d($8), a->d($4)
+Starting intersection: a
+Ending intersection: d
+a->b ($4), b->d ($5), c->d ($3), d->a ($4), a->c ($4), d->a ($1), c->b ($1)
 The program will output the minimum cost path:
-Best path: A->D
-Cost: $4
+Best path: a->c->b->d
+Cost: $10
+
 Minimum Cost Path Finder Contributing
 Feel free to contribute to this project. You can fork the repository, make changes, and submit a pull request.
 
