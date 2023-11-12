@@ -49,21 +49,21 @@ int findMinimumCost(int n, const vector<vector<int>> &dist, int start,
 
 int main() {
   int n, start, end;
-  cout << "Enter the number of cities: ";
+  cout << "Enter the number of nodes: ";
   cin >> n;
 
   vector<vector<int>> dist(n, vector<int>(n));
-  cout << "Enter the distance matrix:\n";
+  cout << "Enter the cost matrix:\n";
   for (int i = 0; i < n; i++) {
     for (int j = 0; j < n; j++) {
       cin >> dist[i][j];
     }
   }
 
-  cout << "Enter the start";
+  cout << "Enter the starting node";
   cin >> start;
 
-  cout << "Enter the end";
+  cout << "Enter the ending node";
   cin >> end;
 
   int cost = findMinimumCost(n, dist, start, end);
